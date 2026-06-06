@@ -8,15 +8,15 @@
 // ── PERSONAL INFO ──────────────────────────────────────────
 const personalInfo = {
   name: "Vicent Kamya",
-  title: "PhD Chemist | Flow Chemistry Researcher | Automation Builder | Science Entrepreneur",
+  title: "PhD Chemist | Flow Technologies | Drug Discovery |",
   tagline: "Research. Build. Lead. Impact.",
-  intro: "I document my research, projects, leadership, books, ideas, and ongoing work at the intersection of chemistry, automation, medicine, entrepreneurship, and faith-driven impact.",
-  email: "v.kamya@example.com",           // ← Update your email
-  linkedin: "https://linkedin.com/in/vicentkamya",  // ← Update
-  github: "https://github.com/vicentkamya",         // ← Update
+  intro: " Welcome to my page. Here, you will find learn about my research, projects, leadership, books, ideas, and ongoing work at the intersection of chemistry, automation, medicine, entrepreneurship, and faith-driven impact.",
+  email: "vicent.kamya@uconn.edu",           // ← Update your email
+  linkedin: "www.linkedin.com/in/kamya-vicent19930413",  // ← Update
+  github: "https://github.com/Vickamy",         // ← Update
   scholar: "https://scholar.google.com/",            // ← Update
-  orcid: "https://orcid.org/0000-0000-0000-0000",   // ← Update
-  location: "Europe / Africa",                       // ← Update
+  orcid: "https://orcid.org/0000-0003-2604-6384",   // ← Update
+  location: "USA / Africa",                       // ← Update
   cv_url: "#",                                       // ← Link to PDF CV if hosted
   mission: "To harness chemistry, automation, and entrepreneurship to solve real problems in drug access, science education, and sustainable development — especially across Africa.",
   about: {
@@ -32,8 +32,8 @@ const education = [
   {
     degree: "PhD in Chemistry",
     field: "Flow Chemistry & Synthetic Organic Chemistry",
-    institution: "University Placeholder",   // ← Update
-    location: "Europe",
+    institution: "University of Connecticut",   // ← Update
+    location: "USA",
     start: "2022",
     end: "Present",
     thesis: "Automated Mobile Flow Platforms for Continuous Chemical Synthesis",
@@ -41,22 +41,22 @@ const education = [
   },
   {
     degree: "MSc in Chemistry",
-    field: "Organic & Medicinal Chemistry",
-    institution: "University Placeholder",   // ← Update
-    location: "Africa",
-    start: "2019",
-    end: "2021",
-    thesis: "Pentalongin-Derived Scaffolds for Antileishmanial Therapy",
-    highlights: ["Natural product synthesis", "Biological activity assays", "Medicinal chemistry"]
+    field: "Organic Chemistry",
+    institution: "University of Nairobi",   // ← Update
+    location: "Kenya",
+    start: "2018",
+    end: "2022",
+    thesis: "Phytochemical Investigation of Pentas Species for Leishmanicidal Principles",
+    highlights: ["Natural product isolation and characterization", "Neglected Tropical Diseases", "Nature-guided Drug Discovery"]
   },
   {
     degree: "BSc in Chemistry",
     field: "Chemistry",
-    institution: "University Placeholder",   // ← Update
-    location: "Africa",
-    start: "2015",
-    end: "2019",
-    highlights: ["First Class Honours", "Best student award"]
+    institution: "Kyambogo University",   // ← Update
+    location: "Kampala, Uganda",
+    start: "2013",
+    end: "2016",
+    highlights: ["Chemistry Education"]
   }
 ];
 
@@ -65,18 +65,18 @@ const researchExperience = [
   {
     role: "PhD Researcher",
     group: "Flow Chemistry & Automation Lab",
-    institution: "University Placeholder",
+    institution: "University of Connecticut",
     start: "2022",
     end: "Present",
     description: "Designing and operating continuous-flow synthesis platforms. Developing automated systems for artemisinin production and medicinal compound libraries."
   },
   {
     role: "MSc Researcher",
-    group: "Medicinal Chemistry Group",
-    institution: "University Placeholder",
-    start: "2019",
-    end: "2021",
-    description: "Synthesised and characterised pentalongin-derived compounds. Conducted antileishmanial screening and structure-activity relationship studies."
+    group: "Natural Products and Medicinal Chemistry Group",
+    institution: "University of Nairobi",
+    start: "2018",
+    end: "2022",
+    description: "Isolated and characterized naturally occurring compounds from five East African medicinal plants to guide the discovery and development of leishmania therapies."
   }
 ];
 
