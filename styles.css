@@ -256,6 +256,15 @@ p:last-child { margin-bottom: 0; }
 
 .btn-sm { padding: 8px 16px; font-size: 0.85rem; }
 
+.hero-btn-outline {
+  border-color: rgba(255,255,255,0.3) !important;
+  color: #fff !important;
+}
+.hero-btn-outline:hover {
+  border-color: var(--gold) !important;
+  color: var(--gold) !important;
+}
+
 /* Filter Bar */
 .filter-bar {
   display: flex;

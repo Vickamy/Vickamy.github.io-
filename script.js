@@ -62,9 +62,26 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   // ── BACK TO TOP ───────────────────────────────────────────
-  document.getElementById('back-to-top')?.addEventListener('click', () => {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-  });
+  const backToTopBtn = document.getElementById('back-to-top');
+  if (backToTopBtn) {
+    backToTopBtn.style.opacity = '0';
+    backToTopBtn.style.pointerEvents = 'none';
+    backToTopBtn.style.transition = 'opacity 0.22s ease, background 0.22s ease';
+
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 300) {
+        backToTopBtn.style.opacity = '1';
+        backToTopBtn.style.pointerEvents = 'all';
+      } else {
+        backToTopBtn.style.opacity = '0';
+        backToTopBtn.style.pointerEvents = 'none';
+      }
+    });
+
+    backToTopBtn.addEventListener('click', () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  }
 
   // ── SCROLL REVEAL ─────────────────────────────────────────
   const revealObserver = new IntersectionObserver((entries) => {
@@ -295,10 +312,31 @@ document.addEventListener('DOMContentLoaded', () => {
             <span class="badge badge-outline" style="margin-bottom:8px;display:inline-block;">${b.category}</span>
             <p class="book-lesson">${b.lessons}</p>
             <div class="book-stars">${stars}</div>
+            <button class="project-read-more book-read-more" data-id="${b.id}" style="margin-top:10px;" aria-label="Read details for ${b.title}">
+              View Reflection →
+            </button>
           </div>
         </article>
       `;
     }).join('') : '<p style="color:var(--text-light);font-style:italic;">No books match your search.</p>';
+
+    container.querySelectorAll('.book-read-more').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const bk = books.find(b => b.id === parseInt(btn.dataset.id));
+        if (bk) {
+          openModal({
+            category: bk.category,
+            title: bk.title,
+            author: bk.author,
+            dateRead: `Read in ${bk.dateRead}`,
+            details: bk.influence || bk.lessons,
+            outcomes: bk.quote ? [`"${bk.quote}"`] : [],
+            tags: [bk.category, 'Book Reflection']
+          });
+        }
+      });
+    });
+
     observeReveal();
   }
 
