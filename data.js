@@ -8,11 +8,11 @@
 // ── PERSONAL INFO ──────────────────────────────────────────
 const personalInfo = {
   name: "Vicent Kamya",
-  title: "PhD Chemist | Flow Technologies | Drug Discovery |",
+  title: "PhD Chemist | Flow Technologies | Drug Discovery",
   tagline: "Research. Build. Lead. Impact.",
-  intro: " Welcome to my page. Here, you will find learn about my research, projects, leadership, books, ideas, and ongoing work at the intersection of chemistry, automation, medicine, entrepreneurship, and faith-driven impact.",
+  intro: "Welcome to my page. Here, you will learn about my research, projects, leadership, books, ideas, and ongoing work at the intersection of chemistry, automation, medicine, entrepreneurship, and faith-driven impact.",
   email: "vicent.kamya@uconn.edu",           // ← Update your email
-  linkedin: "www.linkedin.com/in/kamya-vicent19930413",  // ← Update
+  linkedin: "https://www.linkedin.com/in/kamya-vicent19930413",  // ← Update
   github: "https://github.com/Vickamy",         // ← Update
   scholar: "https://scholar.google.com/",            // ← Update
   orcid: "https://orcid.org/0000-0003-2604-6384",   // ← Update
@@ -91,9 +91,9 @@ const skills = {
 
 // ── AWARDS ─────────────────────────────────────────────────
 const awards = [
-  { year: "2023", title: "PhD Research Excellence Award", org: "University Placeholder" },
-  { year: "2021", title: "Best MSc Thesis Award", org: "University Placeholder" },
-  { year: "2019", title: "Top Graduate — BSc Chemistry", org: "University Placeholder" }
+  { year: "2023", title: "PhD Research Excellence Award", org: "University of Connecticut" },
+  { year: "2021", title: "Best MSc Thesis Award", org: "University of Nairobi" },
+  { year: "2019", title: "Top Graduate — BSc Chemistry", org: "Kyambogo University" }
   // ← Add more awards here
 ];
 

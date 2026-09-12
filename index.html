@@ -421,29 +421,29 @@
         <div class="contact-links">
 
           <!-- ← Update email in data.js → personalInfo.email -->
-          <a href="mailto:v.kamya@example.com" id="contact-email" class="contact-link" aria-label="Send email">
+          <a href="mailto:vicent.kamya@uconn.edu" id="contact-email" class="contact-link" aria-label="Send email">
             <span class="contact-link-icon">✉️</span>
             <div class="contact-link-info">
               <div class="label">Email</div>
-              <div class="value" id="contact-email-val">v.kamya@example.com</div>
+              <div class="value" id="contact-email-val">vicent.kamya@uconn.edu</div>
             </div>
           </a>
 
           <!-- ← Update URL in data.js → personalInfo.linkedin -->
-          <a href="https://linkedin.com/in/vicentkamya" target="_blank" rel="noopener noreferrer" class="contact-link" aria-label="LinkedIn profile">
+          <a href="https://www.linkedin.com/in/kamya-vicent19930413" target="_blank" rel="noopener noreferrer" class="contact-link" aria-label="LinkedIn profile">
             <span class="contact-link-icon">💼</span>
             <div class="contact-link-info">
               <div class="label">LinkedIn</div>
-              <div class="value">linkedin.com/in/vicentkamya</div>
+              <div class="value">linkedin.com/in/kamya-vicent19930413</div>
             </div>
           </a>
 
           <!-- ← Update URL in data.js → personalInfo.github -->
-          <a href="https://github.com/vicentkamya" target="_blank" rel="noopener noreferrer" class="contact-link" aria-label="GitHub profile">
+          <a href="https://github.com/Vickamy" target="_blank" rel="noopener noreferrer" class="contact-link" aria-label="GitHub profile">
             <span class="contact-link-icon">💻</span>
             <div class="contact-link-info">
               <div class="label">GitHub</div>
-              <div class="value">github.com/vicentkamya</div>
+              <div class="value">github.com/Vickamy</div>
             </div>
           </a>
 
@@ -457,11 +457,11 @@
           </a>
 
           <!-- ← Update URL in data.js → personalInfo.orcid -->
-          <a href="https://orcid.org/0000-0000-0000-0000" target="_blank" rel="noopener noreferrer" class="contact-link" aria-label="ORCID profile">
+          <a href="https://orcid.org/0000-0003-2604-6384" target="_blank" rel="noopener noreferrer" class="contact-link" aria-label="ORCID profile">
             <span class="contact-link-icon">🆔</span>
             <div class="contact-link-info">
               <div class="label">ORCID</div>
-              <div class="value">0000-0000-0000-0000</div>
+              <div class="value">0000-0003-2604-6384</div>
             </div>
           </a>
 
@@ -469,7 +469,7 @@
             <span class="contact-link-icon">📍</span>
             <div class="contact-link-info">
               <div class="label">Location</div>
-              <div class="value">Europe / Africa</div>  <!-- ← Update -->
+              <div class="value">USA / Africa</div>
             </div>
           </div>
 
@@ -482,7 +482,7 @@
           <h3 style="margin-bottom:20px;">Send a Message</h3>
           <p class="form-note" style="margin-bottom:20px;">
             This form opens your email client. For direct enquiries, email me at
-            <a href="mailto:v.kamya@example.com">v.kamya@example.com</a>.
+            <a href="mailto:vicent.kamya@uconn.edu">vicent.kamya@uconn.edu</a>.
           </p>
           <div class="contact-form">
             <div class="form-group">
@@ -524,8 +524,8 @@
         <a href="#research">Research</a>
         <a href="#journal">Journal</a>
         <a href="#contact">Contact</a>
-        <a href="https://linkedin.com/in/vicentkamya" target="_blank" rel="noopener">LinkedIn</a>
-        <a href="https://github.com/vicentkamya" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://www.linkedin.com/in/kamya-vicent19930413" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://github.com/Vickamy" target="_blank" rel="noopener">GitHub</a>
       </div>
     </div>
     <div class="footer-bottom">
@@ -586,7 +586,7 @@ function sendContactForm() {
   const email   = document.getElementById('cf-email').value.trim();
   const subject = document.getElementById('cf-subject').value.trim() || 'Enquiry from portfolio website';
   const message = document.getElementById('cf-message').value.trim();
-  const to      = 'v.kamya@example.com'; // ← Update this to your real email
+  const to      = personalInfo?.email || 'vicent.kamya@uconn.edu';
   const body    = `Name: ${name}\nEmail: ${email}\n\n${message}`;
   window.location.href = `mailto:${to}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
 }
