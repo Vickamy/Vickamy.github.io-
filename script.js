@@ -56,9 +56,15 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // ── PRINT ─────────────────────────────────────────────────
+  // ── PRINT / DOWNLOAD CV ──────────────────────────────────
   document.querySelectorAll('.print-cv-btn').forEach(btn => {
-    btn.addEventListener('click', () => window.print());
+    btn.addEventListener('click', () => {
+      if (typeof personalInfo !== 'undefined' && personalInfo.cv_url && personalInfo.cv_url !== '#') {
+        window.open(personalInfo.cv_url, '_blank');
+      } else {
+        window.print();
+      }
+    });
   });
 
   // ── BACK TO TOP ───────────────────────────────────────────
@@ -112,10 +118,10 @@ document.addEventListener('DOMContentLoaded', () => {
     const outcomesEl = document.getElementById('modal-outcomes-section');
     const outcomesList = document.getElementById('modal-outcomes');
     if (data.outcomes && data.outcomes.length) {
-      outcomesEl.style.display = '';
+      outcomesEl.classList.remove('hidden');
       outcomesList.innerHTML = data.outcomes.map(o => `<div class="modal-outcome">${o}</div>`).join('');
     } else {
-      outcomesEl.style.display = 'none';
+      outcomesEl.classList.add('hidden');
     }
 
     const tagsEl = document.getElementById('modal-tags');
@@ -124,10 +130,10 @@ document.addEventListener('DOMContentLoaded', () => {
     const pubsEl = document.getElementById('modal-pubs-section');
     const pubsList = document.getElementById('modal-pubs');
     if (data.publications && data.publications.length) {
-      pubsEl.style.display = '';
+      pubsEl.classList.remove('hidden');
       pubsList.innerHTML = data.publications.map(p => `<div class="modal-outcome">${p}</div>`).join('');
     } else {
-      pubsEl.style.display = 'none';
+      pubsEl.classList.add('hidden');
     }
 
     modalOverlay.classList.add('open');
@@ -526,11 +532,25 @@ document.addEventListener('DOMContentLoaded', () => {
     `).join('');
   }
 
-  // ── CONTACT: POPULATE LINKS ───────────────────────────────
+  // ── CONTACT: POPULATE LINKS & FORM HANDLER ────────────────
   const emailLink = document.getElementById('contact-email');
   if (emailLink) emailLink.href = `mailto:${personalInfo.email}`;
   const emailVal = document.getElementById('contact-email-val');
   if (emailVal) emailVal.textContent = personalInfo.email;
+
+  const contactForm = document.getElementById('contact-form');
+  if (contactForm) {
+    contactForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const name    = document.getElementById('cf-name').value.trim();
+      const email   = document.getElementById('cf-email').value.trim();
+      const subject = document.getElementById('cf-subject').value.trim() || 'Enquiry from portfolio website';
+      const message = document.getElementById('cf-message').value.trim();
+      const to      = (typeof personalInfo !== 'undefined' && personalInfo.email) ? personalInfo.email : 'vicent.kamya@uconn.edu';
+      const body    = `Name: ${name}\nEmail: ${email}\n\n${message}`;
+      window.location.href = `mailto:${to}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    });
+  }
 
   // ── INITIAL REVEAL TRIGGER ────────────────────────────────
   observeReveal();

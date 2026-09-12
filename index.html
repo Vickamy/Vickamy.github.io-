@@ -100,13 +100,10 @@
         </div>
       </div>
 
-      <!-- Photo placeholder — replace src with your actual photo -->
+      <!-- Photo avatar with initials fallback -->
       <div class="hero-avatar" aria-hidden="true">
+        <img src="assets/profile.jpg" alt="Vicent Kamya" class="avatar-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
         <div class="avatar-frame">VK</div>
-        <!--
-          To add your photo, replace the avatar-frame div above with:
-          <img src="photo.jpg" alt="Vicent Kamya" style="width:100%;height:100%;object-fit:cover;border-radius:var(--radius-xl);" />
-        -->
       </div>
     </div>
   </div>
@@ -132,7 +129,7 @@
 
     <div class="about-grid">
       <div class="about-text reveal">
-        <p style="font-size:1.05rem;line-height:1.8;color:var(--text);">
+        <p class="about-lead-text">
           I am Vicent Kamya, a PhD chemist specialising in flow chemistry and laboratory automation. My research sits at the boundary between synthetic organic chemistry, continuous manufacturing, and medicinal chemistry. I am driven by a conviction that science done well — and shared widely — can transform communities.
         </p>
         <p>
@@ -178,7 +175,7 @@
       <p>A structured record of my academic journey, research experience, and skills.</p>
     </div>
 
-    <div style="text-align:right;margin-bottom:32px;" class="reveal">
+    <div class="cv-header-actions reveal">
       <button class="btn btn-outline print-cv-btn">⬇ Print / Download CV</button>
     </div>
 
@@ -200,7 +197,7 @@
       </div>
 
       <!-- Skills -->
-      <div class="cv-block reveal" style="grid-column:1/-1;">
+      <div class="cv-block cv-block-full reveal">
         <h3>Technical Skills &amp; Competencies</h3>
         <div class="skills-grid" id="skills-grid">
           <!-- Populated by script.js from data.js -->
@@ -224,9 +221,9 @@
       </div>
 
       <!-- Professional Interests -->
-      <div class="cv-block reveal" style="grid-column:1/-1;">
+      <div class="cv-block cv-block-full reveal">
         <h3>Professional Interests</h3>
-        <div style="display:flex;flex-wrap:wrap;gap:10px;margin-top:4px;">
+        <div class="chip-group-row">
           <!-- Update these chips directly here if you prefer -->
           <span class="skill-pill">Flow chemistry</span>
           <span class="skill-pill">Pharmaceutical manufacturing</span>
@@ -475,7 +472,7 @@
             </div>
           </a>
 
-          <div class="contact-link" style="cursor:default;">
+          <div class="contact-link contact-link-static">
             <span class="contact-link-icon">📍</span>
             <div class="contact-link-info">
               <div class="label">Location</div>
@@ -486,33 +483,33 @@
         </div>
       </div>
 
-      <!-- Contact form (front-end only — mailto on submit) -->
+      <!-- Contact form -->
       <div class="reveal">
         <div class="card">
-          <h3 style="margin-bottom:20px;">Send a Message</h3>
-          <p class="form-note" style="margin-bottom:20px;">
+          <h3 class="card-title-spaced">Send a Message</h3>
+          <p class="form-note form-note-spaced">
             This form opens your email client. For direct enquiries, email me at
             <a href="mailto:vicent.kamya@uconn.edu">vicent.kamya@uconn.edu</a>.
           </p>
-          <div class="contact-form">
+          <form id="contact-form" class="contact-form">
             <div class="form-group">
               <label for="cf-name">Your Name</label>
-              <input type="text" id="cf-name" placeholder="Dr. Jane Smith" />
+              <input type="text" id="cf-name" name="name" placeholder="Dr. Jane Smith" required />
             </div>
             <div class="form-group">
               <label for="cf-email">Your Email</label>
-              <input type="email" id="cf-email" placeholder="jane@university.edu" />
+              <input type="email" id="cf-email" name="email" placeholder="jane@university.edu" required />
             </div>
             <div class="form-group">
               <label for="cf-subject">Subject</label>
-              <input type="text" id="cf-subject" placeholder="Research collaboration enquiry" />
+              <input type="text" id="cf-subject" name="subject" placeholder="Research collaboration enquiry" />
             </div>
             <div class="form-group">
               <label for="cf-message">Message</label>
-              <textarea id="cf-message" rows="5" placeholder="Hello Vicent, I am writing regarding…"></textarea>
+              <textarea id="cf-message" name="message" rows="5" placeholder="Hello Vicent, I am writing regarding…" required></textarea>
             </div>
-            <button class="btn btn-primary" onclick="sendContactForm()" type="button">Send via Email →</button>
-          </div>
+            <button class="btn btn-primary" type="submit">Send via Email →</button>
+          </form>
         </div>
       </div>
     </div>
@@ -546,20 +543,20 @@
 </footer>
 
 <!-- ============================================================
-     MODAL (for project & journal detail views)
+     MODAL (for project, journal, & book detail views)
      ============================================================ -->
 <div id="modal-overlay" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="modal-title">
   <div class="modal">
     <div class="modal-header">
       <div class="modal-header-meta">
-        <div style="display:flex;gap:8px;flex-wrap:wrap;">
+        <div class="modal-cat-meta">
           <span id="modal-cat" class="badge badge-gold"></span>
           <span id="modal-status" class="badge"></span>
         </div>
         <h3 id="modal-title"></h3>
-        <div style="display:flex;gap:16px;flex-wrap:wrap;">
-          <span id="modal-date" style="font-family:var(--font-mono);font-size:0.75rem;color:var(--text-light);"></span>
-          <span id="modal-role" style="font-size:0.85rem;color:var(--text-mid);font-style:italic;"></span>
+        <div class="modal-submeta-row">
+          <span id="modal-date" class="modal-date-text"></span>
+          <span id="modal-role" class="modal-role-text"></span>
         </div>
       </div>
       <button id="modal-close" class="modal-close" aria-label="Close">×</button>
@@ -572,12 +569,12 @@
         <div class="modal-outcomes" id="modal-outcomes"></div>
       </div>
 
-      <div id="modal-pubs-section" style="display:none;">
+      <div id="modal-pubs-section" class="hidden">
         <h4>Publications &amp; Outputs</h4>
         <div class="modal-outcomes" id="modal-pubs"></div>
       </div>
 
-      <div id="modal-tags" class="tags" style="margin-top:20px;"></div>
+      <div id="modal-tags" class="tags modal-tags-spaced"></div>
     </div>
   </div>
 </div>
@@ -589,18 +586,7 @@
 <script src="data.js"></script>
 <script src="script.js"></script>
 
-<!-- Contact form handler (inline, small) -->
-<script>
-function sendContactForm() {
-  const name    = document.getElementById('cf-name').value.trim();
-  const email   = document.getElementById('cf-email').value.trim();
-  const subject = document.getElementById('cf-subject').value.trim() || 'Enquiry from portfolio website';
-  const message = document.getElementById('cf-message').value.trim();
-  const to      = personalInfo?.email || 'vicent.kamya@uconn.edu';
-  const body    = `Name: ${name}\nEmail: ${email}\n\n${message}`;
-  window.location.href = `mailto:${to}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
-}
-</script>
+</body>
 
 </body>
 </html>

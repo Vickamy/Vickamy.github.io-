@@ -17,7 +17,7 @@ const personalInfo = {
   scholar: "https://scholar.google.com/",            // ← Update
   orcid: "https://orcid.org/0000-0003-2604-6384",   // ← Update
   location: "USA / Africa",                       // ← Update
-  cv_url: "#",                                       // ← Link to PDF CV if hosted
+  cv_url: "assets/CV_Vicent_Kamya.pdf",            // ← Link to PDF CV if hosted
   mission: "To harness chemistry, automation, and entrepreneurship to solve real problems in drug access, science education, and sustainable development — especially across Africa.",
   about: {
     who: "I am Vicent Kamya, a PhD chemist specialising in flow chemistry and laboratory automation. My research sits at the boundary between synthetic organic chemistry, continuous manufacturing, and medicinal chemistry. I am driven by a conviction that science done well — and shared widely — can transform communities.",
