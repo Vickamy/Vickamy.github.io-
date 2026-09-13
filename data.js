@@ -350,7 +350,7 @@ const opportunities = [
   { title: "Research Collaborations", icon: "🔬", description: "Interested in collaborating with research groups working on pharmaceutical synthesis, flow chemistry, natural product chemistry, or drug discovery for neglected diseases." },
   { title: "Funding & Investment", icon: "💰", description: "Seeking funding discussions for the mobile flow platform project and Kazi Konnekt. Open to conversations with development funders, impact investors, and research grant bodies." },
   { title: "Technology Commercialisation", icon: "⚙️", description: "Looking for partnerships to commercialise flow chemistry technology for pharmaceutical production in low-resource settings." },
-  { title: "Pharmaceutical Partnerships", icon: "💊", description: "Open to collaborations with pharmaceutical companies or NGOs interested in sustainable artemisinin production or antimalarial manufacturing capacity." },
+  { title: "Pharmaceutical Partnerships", icon: "💊", description: "Open to collaborations with pharmaceutical companies or NGOs interested in sustainable essential medicine manufacturing." },
   { title: "Science Education Partnerships", icon: "📖", description: "Interested in partnerships with educational institutions, publishers, or platforms developing science education resources for African audiences." },
   { title: "Speaking & Writing", icon: "🎤", description: "Available for speaking engagements, podcast appearances, and writing commissions on topics including flow chemistry, science in Africa, entrepreneurship, and faith in the public square." },
   { title: "Mentoring", icon: "🤝", description: "Happy to mentor early-career scientists from African backgrounds navigating research, PhD study abroad, and career development." }
