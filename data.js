@@ -34,8 +34,8 @@ const education = [
     field: "Flow Chemistry & Synthetic Organic Chemistry",
     institution: "University of Connecticut",   // ← Update
     location: "USA",
-    start: "2022",
-    end: "Present",
+    start: "2026",
+    end: "2026",
     thesis: "Automated Mobile Flow Platforms for Continuous Chemical Synthesis",
     highlights: ["Continuous-flow artemisinin synthesis", "Photochemical flow reactors", "Automation & process control"]
   },
@@ -44,7 +44,7 @@ const education = [
     field: "Organic Chemistry",
     institution: "University of Nairobi",   // ← Update
     location: "Kenya",
-    start: "2018",
+    start: "2022",
     end: "2022",
     thesis: "Phytochemical Investigation of Pentas Species for Leishmanicidal Principles",
     highlights: ["Natural product isolation and characterization", "Neglected Tropical Diseases", "Nature-guided Drug Discovery"]
@@ -54,7 +54,7 @@ const education = [
     field: "Chemistry",
     institution: "Kyambogo University",   // ← Update
     location: "Kampala, Uganda",
-    start: "2013",
+    start: "2016",
     end: "2016",
     highlights: ["Chemistry Education"]
   }
@@ -99,9 +99,9 @@ const awards = [
 
 // ── PRESENTATIONS ──────────────────────────────────────────
 const presentations = [
-  { year: "2022", title: "Phytochemical investigation of five pentas species for leishmanicidal principles", event: "Master's Research Presentation", type: "Oral" },
-  { year: "2025", title: "Development of Novel Pentalongin-Naphthol Hybrids as Potent and Safer Antileishmanial Agents", event: "Medicinal Chemistry Symposium", type: "Oral" },
-  { year: "2026", title: "Democratizing Flow Chemistry: Affordable Automation and Potent Anticancer Artemisinin Derivatives", event: "Flow Chemistry & Automation Conference", type: "Oral" }
+  { year: "2021", title: "Phytochemical Investigation Of Five Pentas Species for Leishmanicidal Principles", event: "University of Nairobi Research Week, 2021", type: "Oral" },
+  { year: "2025", title: "Development of Novel Pentalongin-Naphthol Hybrids as Potent and Safer Antileishmanial Agents", event: "University of Connecticut", type: "Oral" },
+  { year: "2026", title: "Democratizing Flow Chemistry: Affordable Automation and Potent Anticancer Artemisinin Derivatives", event: "University of Connecticut (Fall 2026 Chemistry Colloquium)", type: "Oral" }
 ];
 
 // ── PROJECTS ───────────────────────────────────────────────
@@ -427,15 +427,15 @@ const leadershipRoles = [
 
 // ── MILESTONES ─────────────────────────────────────────────
 const milestones = [
-  { year: "2015", title: "Began BSc Chemistry", description: "Enrolled at university, beginning my formal journey in chemistry.", category: "Education" },
-  { year: "2019", title: "BSc Awarded — First Class", description: "Graduated with First Class Honours. Awarded best graduating student in Chemistry.", category: "Education" },
-  { year: "2019", title: "MSc Research Begins", description: "Started MSc research on pentalongin scaffolds for antileishmanial therapy.", category: "Research" },
-  { year: "2021", title: "MSc Awarded — Best Thesis", description: "Completed MSc with best thesis award. Twelve novel compounds synthesised.", category: "Education" },
+  { year: "2013", title: "Began BSc Chemistry", description: "Enrolled at Kyambogo University, beginning my formal journey in chemistry.", category: "Education" },
+  { year: "2016", title: "Graduated with BSc in Chemistry", description: "Completed undergraduate degree in Chemistry at Kyambogo University.", category: "Education" },
+  { year: "2017", title: "Chemistry Teacher at Naalya Secondary School", description: "Hired as a chemistry teacher at Naalya Secondary School.", category: "Career" },
+  { year: "2018", title: "Began MSc in Chemistry", description: "Started Master's degree research at the University of Nairobi.", category: "Education" },
+  { year: "2022", title: "Completed MSc in Chemistry", description: "Completed Master's degree at the University of Nairobi.", category: "Education" },
   { year: "2022", title: "PhD Programme Begins", description: "Began PhD research in flow chemistry and automation at University of Connecticut.", category: "Research" },
   { year: "2023", title: "ICF Leadership Role", description: "Joined the leadership team of the International Christian Fellowship.", category: "Leadership" },
   { year: "2023", title: "Elite Enterprises Founded", description: "Launched first entrepreneurial initiative combining science and community impact.", category: "Entrepreneurship" },
   { year: "2024", title: "First Successful Artemisinin Flow Run", description: "Achieved end-to-end continuous-flow artemisinin synthesis for the first time.", category: "Research" },
-  { year: "2024", title: "International Conference Presentation", description: "Presented flow platform research at a major European flow chemistry conference.", category: "Research" },
   { year: "June 2026", title: "Started Process Chemistry Internship at Pfizer", description: "Started an internship at Pfizer in Process Chemistry, Chemical Research and Development (June 01, 2026). Developed a flow platform incorporating flow-electrochemistry to synthesize derivatives safely and sustainably without toxic reagents, working under Dr. Chase Salazar (Principal Scientist).", category: "Research" },
   { year: "August 2026", title: "Completed Pfizer Internship", description: "Completed a 3-month Internship at Pfizer in Chemical Research and Development (August 21, 2026).", category: "Research" },
   { year: "August 2026", title: "Postdoctoral Fellowship Offer Accepted", description: "Accepted an offer for a Postdoctoral Fellowship at the University of Ottawa (August 14, 2026).", category: "Career" },

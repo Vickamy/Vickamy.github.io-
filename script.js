@@ -453,9 +453,11 @@ document.addEventListener('DOMContentLoaded', () => {
   // ── RENDER: CV EDUCATION ──────────────────────────────────
   const eduTimeline = document.getElementById('edu-timeline');
   if (eduTimeline) {
-    eduTimeline.innerHTML = education.map(e => `
+    eduTimeline.innerHTML = education.map(e => {
+      const yearDisplay = (e.start === e.end) ? e.end : `${e.start}<br>–<br>${e.end}`;
+      return `
       <div class="timeline-item">
-        <div class="tl-year">${e.start}<br>–<br>${e.end}</div>
+        <div class="tl-year">${yearDisplay}</div>
         <div class="tl-content">
           <h4>${e.degree}</h4>
           <div class="tl-sub">${e.field}</div>
@@ -464,7 +466,8 @@ document.addEventListener('DOMContentLoaded', () => {
           <div class="tl-chips">${(e.highlights||[]).map(h=>`<span class="tl-chip">${h}</span>`).join('')}</div>
         </div>
       </div>
-    `).join('');
+    `;
+    }).join('');
   }
 
   // ── RENDER: CV RESEARCH EXPERIENCE ───────────────────────
