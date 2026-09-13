@@ -20,7 +20,7 @@ const personalInfo = {
   cv_url: "assets/CV_Vicent_Kamya.pdf",            // ← Link to PDF CV if hosted
   mission: "To harness chemistry, automation, and entrepreneurship to solve real problems in drug access, science education, and sustainable development — especially across Africa.",
   about: {
-    who: "I am a PhD focusing on developing continuous flow chemistry technologies to make chemical synthesis more approachable, automatable, scalable and sustainable. My research sits at the boundary between synthetic organic chemistry, continuous manufacturing, and medicinal chemistry.",
+    who: "I am a PhD scientist focusing on developing continuous flow chemistry technologies to make chemical synthesis more approachable, automatable, scalable and sustainable. My research sits at the boundary between synthetic organic chemistry, continuous manufacturing, and medicinal chemistry.",
     workOn: "My current research focuses on building automated mobile flow chemistry platforms that can produce pharmaceutical ingredients continuously and efficiently. A central project involves the continuous-flow synthesis of artemisinin, an antimalarial compound critical to global health. I also investigate artemisinin-derived scaffolds for anticancer activity and other natural-product-based drug discovery programmes.",
     drives: "I am motivated by the gap between what chemistry can do and what reaches patients — especially in Africa. I believe that small, automated, modular synthesis platforms could decentralise pharmaceutical production and make medicines more accessible. Faith, family, and a genuine love of ideas keep me going through the long days of research.",
     vision: "I want to build research capacity and technology infrastructure that enables African scientists and entrepreneurs to lead in pharmaceutical manufacturing, drug discovery, and science education. In the long term, I hope to found or contribute to institutions that combine rigorous science with entrepreneurial energy and community impact."
@@ -99,9 +99,9 @@ const awards = [
 
 // ── PRESENTATIONS ──────────────────────────────────────────
 const presentations = [
-  { year: "2024", title: "Continuous-Flow Synthesis of Artemisinin Using a Mobile Platform", event: "European Flow Chemistry Conference", type: "Oral" },
-  { year: "2023", title: "Automated Flow Platforms for Pharmaceutical Manufacturing in Resource-Limited Settings", event: "International Symposium on Continuous Manufacturing", type: "Poster" }
-  // ← Add more presentations here
+  { year: "2022", title: "Phytochemical investigation of five pentas species for leishmanicidal principles", event: "Master's Research Presentation", type: "Oral" },
+  { year: "2025", title: "Development of Novel Pentalongin-Naphthol Hybrids as Potent and Safer Antileishmanial Agents", event: "Medicinal Chemistry Symposium", type: "Oral" },
+  { year: "2026", title: "Democratizing Flow Chemistry: Affordable Automation and Potent Anticancer Artemisinin Derivatives", event: "Flow Chemistry & Automation Conference", type: "Oral" }
 ];
 
 // ── PROJECTS ───────────────────────────────────────────────
