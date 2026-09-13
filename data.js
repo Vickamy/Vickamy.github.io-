@@ -348,7 +348,7 @@ const milestones = [
 const opportunities = [
   { title: "Postdoctoral Opportunities", icon: "🎓", description: "Open to postdoctoral positions in flow chemistry, continuous manufacturing, or medicinal chemistry — especially those with an applied or industry-relevant focus." },
   { title: "Research Collaborations", icon: "🔬", description: "Interested in collaborating with research groups working on pharmaceutical synthesis, flow chemistry, natural product chemistry, or drug discovery for neglected diseases." },
-  { title: "Funding & Investment", icon: "💰", description: "Seeking funding discussions for the mobile flow platform project and Kazi Konnekt. Open to conversations with development funders, impact investors, and research grant bodies." },
+  { title: "Funding & Investment", icon: "💰", description: "Seeking funding discussions for Drug Discovery R&D. Open to conversations with development funders, impact investors, and research grant bodies." },
   { title: "Technology Commercialisation", icon: "⚙️", description: "Looking for partnerships to commercialise flow chemistry technology for pharmaceutical production in low-resource settings." },
   { title: "Pharmaceutical Partnerships", icon: "💊", description: "Open to collaborations with pharmaceutical companies or NGOs interested in sustainable essential medicine manufacturing." },
   { title: "Science Education Partnerships", icon: "📖", description: "Interested in partnerships with educational institutions, publishers, or platforms developing science education resources for African audiences." },
