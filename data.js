@@ -254,6 +254,61 @@ const journalEntries = [
 const books = [
   {
     id: 1,
+    title: "The Purpose Driven Life",
+    author: "Rick Warren",
+    dateRead: "2024",
+    category: "Faith",
+    lessons: "Understanding life's core purpose and aligning personal talents, scientific inquiry, and service toward God and community impact.",
+    quote: "You were made by God and for God — and until you understand that, life will never make sense.",
+    influence: "Reinforced my commitment to leveraging my research and scientific work for community and global health impact.",
+    rating: 5
+  },
+  {
+    id: 2,
+    title: "Those Invisible Spirits Called Angels",
+    author: "Renald E. Showers",
+    dateRead: "2024",
+    category: "Faith",
+    lessons: "A detailed biblical examination of spiritual realities, angelic ministry, and the unseen guidance present in a believer's walk.",
+    quote: "God uses His messengers in ways beyond human comprehension to protect, comfort, and fulfill His divine purposes.",
+    influence: "Deepened my spiritual perspective and mindfulness of God's unseen hand throughout my academic and personal journey.",
+    rating: 5
+  },
+  {
+    id: 3,
+    title: "Prevail",
+    author: "Cindy Trimm",
+    dateRead: "2024",
+    category: "Personal Development",
+    lessons: "Overcoming life's challenges through resilience, spiritual empowerment, and purposeful mindset shifts.",
+    quote: "Your capacity to prevail is determined by the strength of your convictions and the clarity of your vision.",
+    influence: "Inspired greater perseverance and tenacity when navigating complex scientific problems and career milestones.",
+    rating: 5
+  },
+  {
+    id: 4,
+    title: "Unstoppable",
+    author: "Cindy Trimm",
+    dateRead: "2024",
+    category: "Personal Development",
+    lessons: "Breaking through limitations, sustaining momentum, and executing vision with unshakeable faith and discipline.",
+    quote: "Discipline is the bridge between goals and accomplishment.",
+    influence: "Empowered my approach to multi-disciplinary projects, entrepreneurship, and long-term goal setting.",
+    rating: 5
+  },
+  {
+    id: 5,
+    title: "Hello Tomorrow",
+    author: "Cindy Trimm",
+    dateRead: "2024",
+    category: "Personal Development",
+    lessons: "Proactively shaping the future through intentional choices, forward-thinking strategy, and visionary leadership.",
+    quote: "The future belongs to those who prepare for it today.",
+    influence: "Directly influenced how I plan future research platforms, technology commercialization, and career aspirations.",
+    rating: 5
+  },
+  {
+    id: 6,
     title: "The Innovator's Dilemma",
     author: "Clayton M. Christensen",
     dateRead: "2024-08",
@@ -264,59 +319,15 @@ const books = [
     rating: 5
   },
   {
-    id: 2,
+    id: 7,
     title: "Atomic Habits",
     author: "James Clear",
     dateRead: "2023-04",
     category: "Personal Development",
     lessons: "Tiny daily improvements compound into remarkable results. Systems matter more than goals.",
     quote: "You do not rise to the level of your goals. You fall to the level of your systems.",
-    influence: "Changed how I structure my research days. I now protect a 2-hour focused writing block every morning.",
+    influence: "Changed how I structure my research days. I now protect a focused writing block every morning.",
     rating: 5
-  },
-  {
-    id: 3,
-    title: "Shoe Dog",
-    author: "Phil Knight",
-    dateRead: "2023-11",
-    category: "Biography",
-    lessons: "Building something from nothing is chaotic, exhausting, and requires sustained irrational commitment.",
-    quote: "Don't tell people how to do things, tell them what to do and let them surprise you with their results.",
-    influence: "Inspired the early thinking behind Kazi Konnekt. Knight's story reminded me that building businesses is fundamentally about people.",
-    rating: 4
-  },
-  {
-    id: 4,
-    title: "Mere Christianity",
-    author: "C.S. Lewis",
-    dateRead: "2022-12",
-    category: "Faith",
-    lessons: "Rational, careful engagement with the core claims of the Christian faith. Lewis demonstrates that intellectual rigour and deep faith are not enemies.",
-    quote: "I believe in Christianity as I believe that the Sun has risen — not only because I see it, but because by it I see everything else.",
-    influence: "Deepened my ability to articulate my faith clearly and confidently in an academic environment.",
-    rating: 5
-  },
-  {
-    id: 5,
-    title: "Half of a Yellow Sun",
-    author: "Chimamanda Ngozi Adichie",
-    dateRead: "2024-01",
-    category: "Literature",
-    lessons: "The weight of history on individual lives. The importance of telling African stories through African eyes.",
-    quote: "The only authentic ending is the one provided here: John 3:16.",
-    influence: "A reminder of why African voices — including in science and scholarship — must be amplified, not borrowed.",
-    rating: 5
-  },
-  {
-    id: 6,
-    title: "The Hard Thing About Hard Things",
-    author: "Ben Horowitz",
-    dateRead: "2024-03",
-    category: "Entrepreneurship",
-    lessons: "Leadership in difficult times requires honesty, decisiveness, and the courage to make decisions without perfect information.",
-    quote: "There are no silver bullets to be had; only lead bullets.",
-    influence: "Made me more honest with myself about the difficulty of building something — and less afraid of that difficulty.",
-    rating: 4
   }
 ];
 
@@ -397,12 +408,12 @@ const leadershipRoles = [
     impact: "Mentored 20+ students. Consistently rated highly in student feedback."
   },
   {
-    role: "Student Representative",
-    org: "Postgraduate Research Committee",
+    role: "Student Mentor",
+    org: "UConn Chem Mentors",
     start: "2022",
-    end: "2023",
-    description: "Representing PhD student interests in departmental research governance meetings. Advocated for improved support for international researchers.",
-    impact: "Successfully proposed improved induction resources for international PhD students."
+    end: "Present",
+    description: "Mentored undergraduate students to help shape their academic and career path. Also helped students to learn research lab workflows.",
+    impact: "Guided students through academic, career development, and laboratory research workflows."
   },
   {
     role: "Founder & Director",
@@ -420,12 +431,15 @@ const milestones = [
   { year: "2019", title: "BSc Awarded — First Class", description: "Graduated with First Class Honours. Awarded best graduating student in Chemistry.", category: "Education" },
   { year: "2019", title: "MSc Research Begins", description: "Started MSc research on pentalongin scaffolds for antileishmanial therapy.", category: "Research" },
   { year: "2021", title: "MSc Awarded — Best Thesis", description: "Completed MSc with best thesis award. Twelve novel compounds synthesised.", category: "Education" },
-  { year: "2022", title: "PhD Programme Begins", description: "Relocated to Europe. Began PhD research in flow chemistry and automation.", category: "Research" },
+  { year: "2022", title: "PhD Programme Begins", description: "Began PhD research in flow chemistry and automation at University of Connecticut.", category: "Research" },
   { year: "2023", title: "ICF Leadership Role", description: "Joined the leadership team of the International Christian Fellowship.", category: "Leadership" },
   { year: "2023", title: "Elite Enterprises Founded", description: "Launched first entrepreneurial initiative combining science and community impact.", category: "Entrepreneurship" },
   { year: "2024", title: "First Successful Artemisinin Flow Run", description: "Achieved end-to-end continuous-flow artemisinin synthesis for the first time.", category: "Research" },
   { year: "2024", title: "International Conference Presentation", description: "Presented flow platform research at a major European flow chemistry conference.", category: "Research" },
-  { year: "2025", title: "Manuscript in Preparation", description: "First peer-reviewed manuscript on continuous-flow artemisinin synthesis in preparation.", category: "Research" }
+  { year: "June 2026", title: "Started Process Chemistry Internship at Pfizer", description: "Started an internship at Pfizer in Process Chemistry, Chemical Research and Development (June 01, 2026). Developed a flow platform incorporating flow-electrochemistry to synthesize derivatives safely and sustainably without toxic reagents, working under Dr. Chase Salazar (Principal Scientist).", category: "Research" },
+  { year: "August 2026", title: "Completed Pfizer Internship", description: "Completed a 3-month Internship at Pfizer in Chemical Research and Development (August 21, 2026).", category: "Research" },
+  { year: "August 2026", title: "Postdoctoral Fellowship Offer Accepted", description: "Accepted an offer for a Postdoctoral Fellowship at the University of Ottawa (August 14, 2026).", category: "Career" },
+  { year: "September 2026", title: "Novel Artemisinin Derivative Synthesized", description: "Synthesized the first novel disulfide-based artemisinin derivative (September 08, 2026).", category: "Research" }
 ];
 
 // ── OPPORTUNITIES ──────────────────────────────────────────
