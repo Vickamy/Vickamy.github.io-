@@ -146,58 +146,6 @@ const projects = [
     outcomes: ["Library of 15+ derivatives synthesised", "Biological screening data acquired"],
     tags: ["artemisinin", "anticancer", "drug discovery", "medicinal chemistry", "semi-synthesis"],
     publications: []
-  },
-  {
-    id: 4,
-    title: "Pentalongin Scaffolds for Antileishmanial Therapy",
-    category: "Drug Discovery",
-    status: "Completed",
-    date: "2019–2021",
-    role: "Principal Investigator (MSc)",
-    summary: "Synthesised and characterised a series of pentalongin-derived compounds as potential treatments for leishmaniasis, a neglected tropical disease.",
-    details: "Leishmaniasis affects millions in tropical and subtropical regions with limited treatment options. Pentalongin, a naturally occurring naphthoquinone, exhibits antileishmanial activity. This project prepared analogues by structural modification, evaluated them against Leishmania donovani, and established preliminary structure-activity relationships. MSc thesis project.",
-    outcomes: ["12 novel compounds synthesised", "IC50 data established for all compounds", "MSc thesis awarded best thesis prize"],
-    tags: ["leishmaniasis", "natural products", "medicinal chemistry", "neglected diseases", "naphthoquinone"],
-    publications: ["MSc Thesis, 2021"]
-  },
-  {
-    id: 5,
-    title: "Kazi Konnekt — Gig Economy Platform",
-    category: "Entrepreneurship",
-    status: "Proposed",
-    date: "2024–Present",
-    role: "Co-founder & Concept Lead",
-    summary: "A digital platform concept connecting skilled freelancers and service providers with clients across East Africa, addressing youth unemployment and skill monetisation.",
-    details: "Kazi Konnekt (Swahili: 'Work Connect') is a proposed gig economy platform tailored to the East African market. The concept addresses high youth unemployment by creating a trusted marketplace where verified skills — from plumbing to graphic design — can be offered and found easily. The platform would include skills verification, rating systems, and payment integration appropriate for mobile-first users.",
-    outcomes: ["Business concept document prepared", "Market research conducted", "Seeking co-founders and seed funding"],
-    tags: ["entrepreneurship", "Africa", "technology", "employment", "gig economy"],
-    publications: []
-  },
-  {
-    id: 6,
-    title: "Elite Enterprises — Business Development Initiative",
-    category: "Entrepreneurship",
-    status: "Ongoing",
-    date: "2023–Present",
-    role: "Founder",
-    summary: "A small entrepreneurial initiative exploring business opportunities that bridge science, education, and community development.",
-    details: "Elite Enterprises is my vehicle for exploring entrepreneurial ideas grounded in science and community impact. Current activities include science education resources, consulting on chemistry-related projects, and developing content for African science communicators. The enterprise reflects my conviction that scientists must also be builders.",
-    outcomes: ["Active client base established", "Science communication content produced", "Revenue streams under development"],
-    tags: ["entrepreneurship", "education", "science communication", "Africa", "business"],
-    publications: []
-  },
-  {
-    id: 7,
-    title: "Freelancing for Scientists — Education Project",
-    category: "Education",
-    status: "Ongoing",
-    date: "2024–Present",
-    role: "Author & Educator",
-    summary: "Writing a practical guide and online resource helping African scientists and researchers develop freelancing skills and generate income beyond traditional academia.",
-    details: "Many talented African scientists lack pathways to apply their skills commercially. This project develops a book and accompanying online course covering scientific writing, grant consulting, data analysis services, science communication, and digital product creation — all as viable freelancing niches for researchers. The aim is practical, actionable, and Africa-focused.",
-    outcomes: ["Book outline complete", "Three chapters drafted", "Early reader feedback collected"],
-    tags: ["education", "freelancing", "Africa", "science careers", "writing"],
-    publications: []
   }
 ];
 
