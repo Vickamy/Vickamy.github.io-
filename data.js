@@ -150,53 +150,7 @@ const projects = [
 ];
 
 // ── JOURNAL ENTRIES ────────────────────────────────────────
-const journalEntries = [
-  {
-    id: 1,
-    date: "2025-06-01",
-    title: "A New Phase: Reflecting on Year Three of the PhD",
-    category: "Research",
-    summary: "Three years in. Time to take stock of what has been built, what has been learned, and what still lies ahead.",
-    content: "Year three of the PhD has been the most productive and also the most demanding. The flow platform prototype is working. We have data. The synthesis is running. But the emotional weight of doing this far from home, in a different climate, in a language not my own, is real. I write this entry not for anyone else but as a record — proof that I was here, thinking, working, pressing forward. The artemisinin work is exciting. I genuinely believe it matters. That belief is what gets me into the lab at 7am.",
-    tags: ["reflection", "PhD", "research", "milestone"]
-  },
-  {
-    id: 2,
-    date: "2025-03-15",
-    title: "Conference: Flow Chemistry Symposium",
-    category: "Conferences",
-    summary: "Presenting our flow platform work for the first time to an international audience. Notes on the experience.",
-    content: "Standing at the poster board, explaining our mobile flow platform to researchers from six countries — this was a moment I had imagined many times. The questions were sharp. Two people wanted to collaborate. One professor from Germany specifically asked about scaling to a container-based mobile lab. That conversation alone was worth the conference fee. I left energised.",
-    tags: ["conference", "flow chemistry", "networking", "presentation"]
-  },
-  {
-    id: 3,
-    date: "2024-11-20",
-    title: "First Successful Artemisinin Flow Run",
-    category: "Research",
-    summary: "The day the photochemical flow sequence worked end-to-end for the first time.",
-    content: "November 20th. The reaction ran. All the way through. Clean conversion, acceptable yield, no blockage. I stared at the HPLC trace for five minutes. Then I called my supervisor. Then I sat down and laughed. Eighteen months of troubleshooting to get to this point. The chemistry works. Now we optimise.",
-    tags: ["artemisinin", "breakthrough", "flow chemistry", "milestone", "photochemistry"]
-  },
-  {
-    id: 4,
-    date: "2024-08-10",
-    title: "Reading: The Innovator's Dilemma",
-    category: "Learning",
-    summary: "Notes on Christensen's classic and how it applies to pharmaceutical manufacturing in Africa.",
-    content: "Christensen's argument about disruptive innovation resonates deeply with what I think about pharmaceutical manufacturing. Small, modular, 'good enough' technologies deployed at the bottom of the market — that is precisely the logic of the mobile flow platform. Not competing with Pfizer's billion-dollar facilities. Making a different product for a different market. The book clarified my thinking considerably.",
-    tags: ["reading", "entrepreneurship", "innovation", "pharmaceuticals"]
-  },
-  {
-    id: 5,
-    date: "2024-05-04",
-    title: "Launching the ICF Leadership Season",
-    category: "Leadership",
-    summary: "Beginning a new term of leadership within the International Christian Fellowship. Reflections on servant leadership.",
-    content: "Leading a community of students from over thirty nations is genuinely one of the most stretching things I do. Every week requires listening across cultural distances, navigating different expectations, holding space for people who are lonely, disoriented, or struggling. I do not have all the answers. But I am learning to lead with questions — and with presence.",
-    tags: ["ICF", "leadership", "faith", "community", "reflection"]
-  }
-];
+const journalEntries = [];
 
 // ── BOOKS ──────────────────────────────────────────────────
 const books = [
